@@ -1,1 +1,1 @@
-import fetch from "isomorphic-fetch";
+import 'whatwg-fetch'

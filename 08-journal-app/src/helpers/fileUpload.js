@@ -1,8 +1,12 @@
 
 export const fileUpload = async(file) => {
 
+	// if (!file) {
+	// 	throw new Error("No hay ningun archivo a subir")
+	// }
+
 	if (!file) {
-		throw new Error("No hay ningun archivo a subir")
+		return null;
 	}
 
 	const cloudUrl = "https://api.cloudinary.com/v1_1/dt8wjm2cp/upload"
