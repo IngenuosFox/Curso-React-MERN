@@ -8,7 +8,5 @@ describe('Pruebas en fileUpload', () => {
 		const resp = await fetch(imageUrl)
 		const blob = await resp.blob()
 		const file = new File([blob], "foto.jpg")
-
-		const url = await fileUpload()
 	})
 })
